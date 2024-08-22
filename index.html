@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App Data Collector</title>
+</head>
+<body>
+  <h1>App Data Collector</h1>
+
+  <p>This tool collects information about installed apps on an Android device, including package name, installation time, app name, and category.</p>
+
+  <h2>Prerequisites</h2>
+  <ul>
+    <li>Android device with USB debugging enabled</li>
+    <li>ADB (Android Debug Bridge) installed on your computer</li>
+    <li>Python environment with the following libraries:
+      <ul>
+        <li>subprocess</li>
+        <li>json</li>
+        <li>datetime</li>
+        <li>logging (optional for error handling)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Usage</h2>
+  <ol>
+    <li>Clone this repository to your local machine.</li>
+    <li>Ensure you have Python and the required libraries installed.</li>
+    <li>Connect your Android device to your computer via USB.</li>
+    <li>Enable USB debugging on your device.</li>
+    <li>Navigate to the project directory in your terminal.</li>
+    <li>Run the Python script: `python app_data_collector.py`</li>
+  </ol>
+
+  <h2>Output</h2>
+  <p>The script will generate a `app_install_data.json` file in the same directory.</p>
+
+  <h2>Data Structure</h2>
+  <pre>
+  {
+    "package_name": "com.example.app",
+    "install_time": "YYYY-MM-DD HH:MM:SS",
+    "app_name": "Example App",
+    "category": "Productivity"
+  }
+  </pre>
+
+  <h2>Limitations</h2>
+  <ul>
+    <li>Requires a physical connection between the device and computer.</li>
+    <li>Relies on ADB for data collection.</li>
+    <li>Might not capture all installed apps (e.g., pre-installed apps).</li>
+    <li>Play Store data integration is not currently implemented.</li>
+  </ul>
+
+  <h2>Future Improvements</h2>
+  <ul>
+    <li>Consider using a cloud-based solution for data collection and analysis.</li>
+    <li>Implement more robust error handling and data validation.</li>
+    <li>Explore ways to retrieve app names and categories directly from the device.</li>
+  </ul>
+</body>
+</html>
