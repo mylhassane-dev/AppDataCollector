@@ -1,0 +1,194 @@
+
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the body */
+        body {
+            background-color: #333333;
+            /* Darker background */
+            color: #ffffff;
+            /* White text */
+            font-family: 'Montserrat', sans-serif;
+            /* Luxurious font */
+        }
+
+        h1,
+        h2 {
+            color: #ffd90075;
+            /* Golden color for headings */
+            font-weight: bold;
+        }
+
+        ul,
+        ol {
+            color: #cccccc;
+            /* Light gray for lists */
+        }
+
+        /* li tag boulet points for lists */
+        li {
+            /* list-style-type: circle; */
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the pre code blocks */
+        pre {
+            background-color: #444444;
+            /* Dark gray for pre code blocks */
+            color: #ffffff;
+            /* White text for pre code blocks */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Add some luxury flair with box shadows and borders */
+        h1,
+        h2,
+        ul,
+        ol {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid #444444;
+        }
+
+        /* Add some padding and margin to make it look more luxurious */
+        body {
+            padding: 20px;
+            margin: 20px;
+            line-height: 2;
+        }
+
+        /* Style for the site wrapper */
+        .site-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #333333;
+            /* Dark gray for site wrapper */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for the new tags */
+        header {
+            background-color: #444444;
+            /* Dark gray for header */
+            padding: 10px;
+            border-bottom: 1px solid #333333;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            /* Larger font size for header title */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #555555;
+            /* Dark gray for sections */
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 18px;
+            /* Larger font size for section titles */
+        }
+
+        /* Style for the code block full width and scrollable to the right */
+        code {
+            display: block;
+            width: auto;
+            overflow-x: auto;
+            background-color: #444444;
+            /* Dark gray for code blocks */
+            color: #6c6c6c;
+            /* White text for code blocks */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: #444444;
+            /* Dark gray for footer */
+            padding: 10px;
+            border-top: 1px solid #333333;
+            text-align: center;
+        }
+
+        /* Define a class for the code block */
+        .code-block {
+            background-color: #f0f0f031;
+            /* Light gray background */
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 19px;
+        }
+
+        /* Define classes for different types of code */
+        .keyword {
+            color: #090e09;
+            /* Green for keywords */
+            /* font-weight: bold; */
+        }
+
+        .string {
+            color: #221818;
+            /* Red for strings */
+        }
+
+        .number {
+            color: #0a0a5a;
+            /* Blue for numbers */
+        }
+
+        .comment {
+            color: #808080;
+            /* Gray for comments */
+        }
+
+        /* Style for the scroll bar */
+        code::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        code::-webkit-scrollbar-track {
+            background-color: #9b9b9b;
+        }
+
+        code::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
+
+        code::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .site-wrapper {
+                padding: 10px;
+            }
+
+            section {
+                margin-bottom: 10px;
+            }
+
+            .code-block {
+                padding: 5px;
+                font-size: 50px !important;
+            }
+        }
